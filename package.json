@@ -1,0 +1,11 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "learning.js",
+  "scripts": {
+    "start": "node learning.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
