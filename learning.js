@@ -375,13 +375,13 @@
 //      }
 // }
 
-table: for (let i = 1; i < 10; i++) {
-     console.log(`Number ${i}==============`);
-     for (let j = 1; j < 10; j++) {
+// table: for (let i = 1; i < 10; i++) {
+//      console.log(`Number ${i}==============`);
+//      for (let j = 1; j < 10; j++) {
 
-        if(i === 9) {
-            break table;
-        }
-        console.log(`${i} * ${j} = ${i * j}`);
-     }
-}
+//         if(i === 9) {
+//             break table;
+//         }
+//         console.log(`${i} * ${j} = ${i * j}`);
+//      }
+// }
