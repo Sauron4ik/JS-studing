@@ -385,3 +385,127 @@
 //         console.log(`${i} * ${j} = ${i * j}`);
 //      }
 // }
+
+//////////////////////////////////////////////////////////////////////////////
+                    // FUNCTION
+
+// function calcSpace (amount, a, b, c, d) {
+//     `${amount * 4}px`
+// }
+ 
+// // Тут передаємо всі змінні з функції по черзі, передаючи всі змінні, навіть значення яких не маємо (тоді через null)
+// calcSpace (5, null, 10)
+
+        // function calcSpace (amount, unit = "px") {
+       
+        // return `${amount * 4}${unit}`;
+        // }
+
+
+
+
+        function playTrackById(trackId) {
+
+        }
+
+        function stopTrackById(trackId) {
+                console.log(`Get song from ID ${trackId}`)
+        }
+
+        function start (trackName, trackId) {
+                console.log(`Starting: ${trackName}`);
+
+                playTrackById(trackId);
+        }
+
+        function end (oldtrackName, newTrackName) {
+                console.log(`Stopping: ${oldtrackName}`);
+                console.log(`Next Track: ${newTrackName}`);
+        }
+
+        function pauseStop (currentTrackName) {
+                console.log(`Paused: ${currentTrackName}`);
+        }
+
+        function pausePlay (currentTrackName) {
+                console.log(`Paused: ${currentTrackName}`);
+
+                reloadDataTrack();
+
+                playTrackById();
+        }
+
+        // function reloadDataTrack (amount) {
+        //         if(amount <= 0) {
+        //                 console.log("Data about amount");
+        //         } else {
+        //                 console.log("Nochmal refreshing");
+        //                 reloadDataTrack(amount - 1);
+        //         }
+        // }
+
+        // reloadDataTrack(5); //сюди передається параметр з функції, в цьому випадку "amount" для обчислення функції//    
+
+        function pauseStopByTrack(trackName, trackId) {
+
+                let isPause = null;
+
+                return () => {
+                        if(isPause == true) {
+                                return;
+                        }
+
+                        stopTrackById(trackId);
+                        console.log(`Track ${trackName} has paused`);
+                        isPause = true;
+                };
+        }
+
+        const pauseStop234 = pauseStopByTrack("Alandria", 10);
+
+        pauseStop234();
+        pauseStop234();
+        pauseStop234();
+
+        // const runCommand = function(command, errorFn) {
+        //         const result = command();
+                
+        //         if(!result) {
+        //                 return errorFn();
+        //         }
+        // }
+
+        // runCommand(
+        //                 // Стрілкова функція
+        //         () => {
+        //         console.log("Starting command");
+
+        //         return 1-1;
+        //         }, 
+        //         () => 
+        //         console.log("Error")
+        
+        // );
+
+////////////////////////////////////////////////////////////////////////
+
+const memoCalcSpace = (oldAmount = null, oldUnit = null, oldResult = null) => {
+
+        return (amount, unit = "px") => {
+                if(oldAmount === amount && unit === oldUnit){
+                console.log("Memo");
+                return oldResult;
+                }
+
+        oldResult = `${amount * 4}${unit}`;
+        oldAmount = amount;
+        oldUnit = unit;
+
+        return oldResult;
+        };
+};
+
+const calcSpace = memoCalcSpace();
+
+console.log(calcSpace(4));
+console.log(calcSpace(4));
