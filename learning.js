@@ -590,3 +590,117 @@
 //       console.log('getVariableType("Hello")', getVariableType("Hello")); // Виведе: "Це рядок"
 //       console.log("getVariableType(true)", getVariableType(true)); // Виведе: "Це булеве значення"
 //       console.log("getVariableType([1, 2, 3])", getVariableType([1, 2, 3])); // Виведе: "Це інший тип"
+
+
+// ВБУДОВАНІ ГЛОБАЛЬНІ ФУНКЦІЇ ///////////////////////////////////////////////////////////////////////////////////
+
+// Виконання коду, який був переданий текстом в аргумент
+// const code = "(5 + 5) % 5 === 0";
+
+// console.log(eval(code));
+// // покаже тру
+
+// виведе текст
+// const code = "console.log('Hello')";
+
+// eval(code);
+// ===========================================
+
+// перевірка чи є число кінечним
+
+// function calcScreenRation(w, h) {
+// let result = w / h;
+// return isFinite(result) ? result : "Error";
+// }
+// console.log(calcScreenRation (1920, "1080"));
+// ==============================================
+// Перевірка чи не є передане значення не числом Nan
+
+// function calcScreenRation(w, h) {
+//         let result = w / h;
+//         if(isNaN(result)) {
+//                 return "Error";
+//         } else if (!isFinite(result)) {
+//                 return "Is Infinity";
+//         } else {
+//                 return result;
+//         }
+//         }
+//         console.log(calcScreenRation (1920, "1080"));
+// ===============================================================
+
+// перетворювання переданного аргумента в ціле число parseInt()
+
+// const num = "10"; 
+// console.log(10 + num); 
+// так в результаті буде 1010, тобто обєднання, а щоб цього не було пишемо 
+// const num = parseInt("20px");
+// console.log(10 + num);
+// або
+// function calcScreenRation(w, h) {
+//         w = parseInt(w);
+//         h = parseInt(h);
+//         let result = w / h;
+//         if(isNaN(result)) {
+//                 return "Error";
+//         } else if (!isFinite(result)) {
+//                 return "Is Infinity";
+//         } else {
+//                 return result;
+//         }
+//         }
+//         console.log(calcScreenRation ("1920px", "1000px"));
+// ==================================================================
+
+// Перетворює аргумент на число з плавачою точкою parseFloat()
+        // function calcScreenRation(w, h) {
+        // w = parseInt(w);
+        // h = parseInt(h);
+        // let result = w / h;
+        // if(isNaN(result)) {
+        //         return "Error";
+        // } else if (!isFinite(result)) {
+        //         return "Is Infinity";
+        // } else {
+        //         return result;
+        // }
+        // }
+        // console.log(calcScreenRation ("1920px", "1000px"));
+
+        // const num = parseFloat("1.5555");
+        // console.log(num);
+
+        // =================================================================
+
+        // URI / URL encodeURI, decodeURI
+        // будуємо строку URL та пошук/ encodeURI()конвертує текст в рядки URI 
+        const domain = "google.com";
+
+        function redirectToPath(path) {
+        const link = encodeURI(`https://${domain}/${path}`);
+        // робимо перехід на сторінку
+        console.log(link);
+        return link;
+        }
+        
+        const URI = "https://google.com//product/%D0%9D%D0%BE%D1%83%D1%82%20Dell/info"
+
+        // decodeURI конвертує рядки в звичайний текст
+        function getUrl (urlInURI) {
+            urlInURI = decodeURI(urlInURI);
+            console.log(urlInURI);
+
+            return urlInURI;
+        }
+
+        const path = "/product/Ноут Dell/info";
+
+
+        const link = `https://${domain}/${path}`;
+
+        const link1 = redirectToPath(path);
+        const link2 = getUrl(link1);
+
+        console.log(link === link2);
+
+
