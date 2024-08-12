@@ -404,36 +404,36 @@
 
 
 
-        function playTrackById(trackId) {
+        // function playTrackById(trackId) {
 
-        }
+        // }
 
-        function stopTrackById(trackId) {
-                console.log(`Get song from ID ${trackId}`)
-        }
+        // function stopTrackById(trackId) {
+        //         console.log(`Get song from ID ${trackId}`)
+        // }
 
-        function start (trackName, trackId) {
-                console.log(`Starting: ${trackName}`);
+        // function start (trackName, trackId) {
+        //         console.log(`Starting: ${trackName}`);
 
-                playTrackById(trackId);
-        }
+        //         playTrackById(trackId);
+        // }
 
-        function end (oldtrackName, newTrackName) {
-                console.log(`Stopping: ${oldtrackName}`);
-                console.log(`Next Track: ${newTrackName}`);
-        }
+        // function end (oldtrackName, newTrackName) {
+        //         console.log(`Stopping: ${oldtrackName}`);
+        //         console.log(`Next Track: ${newTrackName}`);
+        // }
 
-        function pauseStop (currentTrackName) {
-                console.log(`Paused: ${currentTrackName}`);
-        }
+        // function pauseStop (currentTrackName) {
+        //         console.log(`Paused: ${currentTrackName}`);
+        // }
 
-        function pausePlay (currentTrackName) {
-                console.log(`Paused: ${currentTrackName}`);
+        // function pausePlay (currentTrackName) {
+        //         console.log(`Paused: ${currentTrackName}`);
 
-                reloadDataTrack();
+        //         reloadDataTrack();
 
-                playTrackById();
-        }
+        //         playTrackById();
+        // }
 
         // function reloadDataTrack (amount) {
         //         if(amount <= 0) {
@@ -446,26 +446,26 @@
 
         // reloadDataTrack(5); //сюди передається параметр з функції, в цьому випадку "amount" для обчислення функції//    
 
-        function pauseStopByTrack(trackName, trackId) {
+        // function pauseStopByTrack(trackName, trackId) {
 
-                let isPause = null;
+        //         let isPause = null;
 
-                return () => {
-                        if(isPause == true) {
-                                return;
-                        }
+        //         return () => {
+        //                 if(isPause == true) {
+        //                         return;
+        //                 }
 
-                        stopTrackById(trackId);
-                        console.log(`Track ${trackName} has paused`);
-                        isPause = true;
-                };
-        }
+        //                 stopTrackById(trackId);
+        //                 console.log(`Track ${trackName} has paused`);
+        //                 isPause = true;
+        //         };
+        // }
 
-        const pauseStop234 = pauseStopByTrack("Alandria", 10);
+        // const pauseStop234 = pauseStopByTrack("Alandria", 10);
 
-        pauseStop234();
-        pauseStop234();
-        pauseStop234();
+        // pauseStop234();
+        // pauseStop234();
+        // pauseStop234();
 
         // const runCommand = function(command, errorFn) {
         //         const result = command();
@@ -489,23 +489,104 @@
 
 ////////////////////////////////////////////////////////////////////////
 
-const memoCalcSpace = (oldAmount = null, oldUnit = null, oldResult = null) => {
+// const memoCalcSpace = (oldAmount = null, oldUnit = null, oldResult = null) => {
 
-        return (amount, unit = "px") => {
-                if(oldAmount === amount && unit === oldUnit){
-                console.log("Memo");
-                return oldResult;
-                }
+//         return (amount, unit = "px") => {
+//                 if(oldAmount === amount && unit === oldUnit){
+//                 console.log("Memo");
+//                 return oldResult;
+//                 }
 
-        oldResult = `${amount * 4}${unit}`;
-        oldAmount = amount;
-        oldUnit = unit;
+//         oldResult = `${amount * 4}${unit}`;
+//         oldAmount = amount;
+//         oldUnit = unit;
 
-        return oldResult;
-        };
-};
+//         return oldResult;
+//         };
+// };
 
-const calcSpace = memoCalcSpace();
+// const calcSpace = memoCalcSpace();
 
-console.log(calcSpace(4));
-console.log(calcSpace(4));
+// console.log(calcSpace(4));
+// console.log(calcSpace(4));
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// Задача 9: Напишіть функцію getDayOfWeek, яка приймає номер дня тижня dayNumber (1-7) і повертає рядок, що відповідає цьому дню тижня.
+// Використовуйте конструкцію switch case для визначення дня тижня за його номером.
+
+// function getDayOfWeek(dayNumber) {
+//         // Використовуємо оператор switch для знаходження назви дня тижня залежно від dayNumber
+//         let day;
+//         switch (dayNumber) {
+//           case 1:
+//           day = "Понеділок";
+//           break;
+//           case 2:
+//           day = "Вівторок";
+//           break;
+//           case 3:
+//           day = "Середа";
+//           break;
+//           case 4:
+//           day = "Четверг";
+//           break;
+//           case 5:
+//           day = "Пятниця";
+//           break;
+//           case 6:
+//           day = "Субота";
+//           break;
+//           case 7:
+//           day = "Неділя";
+//           break;
+//         // В кожному випадку (case) перевіряємо значення dayNumber і присвоюємо змінній day відповідну назву дня тижня
+//         // Якщо dayNumber = 1, то day = "Понеділок"
+//         // Якщо dayNumber = 2, то day = "Вівторок"
+//         // Якщо dayNumber = 3, то day = "Середа"
+//         // Якщо dayNumber = 4, то day = "Четвер"
+//         // Якщо dayNumber = 5, то day = "П'ятниця"
+//         // Якщо dayNumber = 6, то day = "Субота"
+//         // Якщо dayNumber = 7, то day = "Неділя"
+//         default:
+//           day = "Невірний номер дня";
+//         }
+//         // Якщо значення dayNumber не співпадає з жодним з випадків, то day = "Невірний номер дня"
+//         return day;
+//         // Повертаємо назву дня тижня, яку зберегли у змінній day
+//       }
+      
+//       // Приклади виклику функції
+//       console.log("Завдання 9 ====================================");
+//       console.log("getDayOfWeek(1)", getDayOfWeek(1)); // Виведе: "Понеділок"
+//       console.log("getDayOfWeek(3)", getDayOfWeek(3)); // Виведе: "Середа"
+//       console.log("getDayOfWeek(6)", getDayOfWeek(6)); // Виведе: "Субота"
+//       console.log("getDayOfWeek(8)", getDayOfWeek(8)); // Виведе: "Невірний номер дня"
+      
+//       // Задача 10: Напишіть функцію getVariableType, яка приймає змінну variable і повертає рядок, що відповідає типу цієї змінної. Використовуйте тернарний оператор для визначення типу змінної.
+      
+//       function getVariableType(variable) {
+//         // Отримуємо тип змінної variable за допомогою оператора typeof
+//         let type = typeof variable;
+//         // Встановлюємо відповідне повідомлення залежно від отриманого типу
+//         let message = type == 'number' ? "Це число":
+//         // Якщо тип змінної - number, то повідомлення = "Це число"
+//         // Якщо тип змінної - string, то повідомлення = "Це рядок"
+//                       type === "string" ? "Це рядок" :
+//         // Якщо тип змінної - boolean, то повідомлення = "Це булеве значення"
+       
+//                       type === "boolean" ? "Це булеве значення" :
+                      
+//         // В іншому випадку (якщо тип змінної не входить у попередні категорії), то повідомлення = "Це інший тип"
+//                       "Це інший тип";
+//         // Повертаємо встановлене повідомлення як результат функції
+//         return message;
+//       }
+      
+//       // Приклади виклику функції
+//       console.log("Завдання 10 ====================================");
+//       console.log("getVariableType(10)", getVariableType(10)); // Виведе: "Це число"
+//       console.log('getVariableType("Hello")', getVariableType("Hello")); // Виведе: "Це рядок"
+//       console.log("getVariableType(true)", getVariableType(true)); // Виведе: "Це булеве значення"
+//       console.log("getVariableType([1, 2, 3])", getVariableType([1, 2, 3])); // Виведе: "Це інший тип"
