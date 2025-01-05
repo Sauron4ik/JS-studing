@@ -653,54 +653,149 @@
 // ==================================================================
 
 // Перетворює аргумент на число з плавачою точкою parseFloat()
-        // function calcScreenRation(w, h) {
-        // w = parseInt(w);
-        // h = parseInt(h);
-        // let result = w / h;
-        // if(isNaN(result)) {
-        //         return "Error";
-        // } else if (!isFinite(result)) {
-        //         return "Is Infinity";
-        // } else {
-        //         return result;
-        // }
-        // }
-        // console.log(calcScreenRation ("1920px", "1000px"));
+// function calcScreenRation(w, h) {
+// w = parseInt(w);
+// h = parseInt(h);
+// let result = w / h;
+// if(isNaN(result)) {
+//         return "Error";
+// } else if (!isFinite(result)) {
+//         return "Is Infinity";
+// } else {
+//         return result;
+// }
+// }
+// console.log(calcScreenRation ("1920px", "1000px"));
 
-        // const num = parseFloat("1.5555");
-        // console.log(num);
+// const num = parseFloat("1.5555");
+// console.log(num);
 
-        // =================================================================
+// =================================================================
 
-        // URI / URL encodeURI, decodeURI
-        // будуємо строку URL та пошук/ encodeURI()конвертує текст в рядки URI 
-        const domain = "google.com";
+// URI / URL encodeURI, decodeURI
+// будуємо строку URL та пошук/ encodeURI()конвертує текст в рядки URI 
+// const domain = "google.com";
 
-        function redirectToPath(path) {
-        const link = encodeURI(`https://${domain}/${path}`);
-        // робимо перехід на сторінку
-        console.log(link);
-        return link;
+// function redirectToPath(path) {
+// const link = encodeURI(`https://${domain}/${path}`);
+// // робимо перехід на сторінку
+// console.log(link);
+// return link;
+// }
+
+// const URI = "https://google.com//product/%D0%9D%D0%BE%D1%83%D1%82%20Dell/info"
+
+// // decodeURI конвертує рядки в звичайний текст
+// function getUrl (urlInURI) {
+//     urlInURI = decodeURI(urlInURI);
+//     console.log(urlInURI);
+
+//     return urlInURI;
+// }
+
+// const path = "/product/Ноут Dell/info";
+
+
+// const link = `https://${domain}/${path}`;
+
+// const link1 = redirectToPath(path);
+// const link2 = getUrl(link1);
+
+// console.log(link === link2);
+
+// ==============================================================
+
+// конструктори числових даних 
+// const a = 0.00051; 
+// const b = 0.00052;
+// const c = 0.00103;
+
+// const d = a + b;
+
+// console.log(d);
+
+// epsilon показує найменьшу можливу різницю між числами
+// console.log(d - c < Number.EPSILON && c - d < Number.EPSILON);
+
+// МАКСИМАЛЬНО (мінімально)БЕЗПЕЧНЕ ЦІЛЕ ЧИСЛО Number.MAX_SAFE_INTEGER
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Number.MIN_SAFE_INTEGER);
+
+// Максимальне (мінімально)можливе число
+// Number.MAX_VALUE; Number.MIN_VALUE 
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MIN_VALUE);
+
+// ПЕРЕВІРКА НА ЦІЛЕ ЧИСЛО 
+// function reviewNumber(num) {
+
+//         if (Number.isNaN(num)) {
+//                 return console.log('Is not a number', num);
+//         }
+
+//         if (!num && num !== 0) {
+//                 return console.log('Bad number', num);
+//         }
+
+//         if(!Number.isInteger(num)) {
+//                 return console.log('Дроб', num);
+//         }      
+//         return console.log(num);  
+// }
+
+// // reviewNumber(10);
+
+//      ПЕРЕВІРКА НА ЦІЛЕ ЧИСЛО З УРАХУВАННЯМ МАКС І МІН БЕЗПЕЧНОГО ЧИСЛА 
+        function reviewNumber(num) {
+
+                if (Number.isNaN(num)) {
+                        return console.log('Is not a number', num);
+                }
+
+                if (!num && num !== 0) {
+                        return console.log('Bad number', num);
+                }
+
+                if(!Number.isInteger(num)) {
+                        return console.log('Дроб', num);
+                }      
+
+                if(!Number.isSafeInteger(num)) {
+                        return console.log('Денджер', num);
+                }      
+
+                return console.log(num);  
         }
-        
-        const URI = "https://google.com//product/%D0%9D%D0%BE%D1%83%D1%82%20Dell/info"
 
-        // decodeURI конвертує рядки в звичайний текст
-        function getUrl (urlInURI) {
-            urlInURI = decodeURI(urlInURI);
-            console.log(urlInURI);
+        // reviewNumber(Number.MAX_SAFE_INTEGER + 12);
 
-            return urlInURI;
-        }
+        // .toFixed(1/2/3) Обрізає числа до десяткових значень. (1/2/3 знаки після крапки)
+        // const a1 = 1.12341;
+        // const a2 = parseInt('1000', 2);
 
-        const path = "/product/Ноут Dell/info";
+        // const a3= parseFloat(a1.toFixed(2));
 
 
-        const link = `https://${domain}/${path}`;
+        // console.log(a3); 
 
-        const link1 = redirectToPath(path);
-        const link2 = getUrl(link1);
+        // .toPrecision() округлювання цілого числа 
 
-        console.log(link === link2);
+        // const a1 = 11236.12341;
+        // const a2 = parseInt('1000', 2);
+
+        // const a3= parseFloat(a1.toPrecision(4));
 
 
+        // console.log(a3); 
+
+        // .toExponential() повертає рядок в експоненційній формі
+        // .toString() передворює число на текст
+
+        const a1 = 999999995874212;
+        const a2 = parseInt('1000', 2);
+
+        const a3 = a1.toExponential();
+        const a4 = parseFloat(a3);
+
+
+        console.log(a3, a4); 
