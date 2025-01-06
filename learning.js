@@ -746,26 +746,26 @@
 // // reviewNumber(10);
 
 //      ПЕРЕВІРКА НА ЦІЛЕ ЧИСЛО З УРАХУВАННЯМ МАКС І МІН БЕЗПЕЧНОГО ЧИСЛА 
-        function reviewNumber(num) {
+        // function reviewNumber(num) {
 
-                if (Number.isNaN(num)) {
-                        return console.log('Is not a number', num);
-                }
+        //         if (Number.isNaN(num)) {
+        //                 return console.log('Is not a number', num);
+        //         }
 
-                if (!num && num !== 0) {
-                        return console.log('Bad number', num);
-                }
+        //         if (!num && num !== 0) {
+        //                 return console.log('Bad number', num);
+        //         }
 
-                if(!Number.isInteger(num)) {
-                        return console.log('Дроб', num);
-                }      
+        //         if(!Number.isInteger(num)) {
+        //                 return console.log('Дроб', num);
+        //         }      
 
-                if(!Number.isSafeInteger(num)) {
-                        return console.log('Денджер', num);
-                }      
+        //         if(!Number.isSafeInteger(num)) {
+        //                 return console.log('Денджер', num);
+        //         }      
 
-                return console.log(num);  
-        }
+        //         return console.log(num);  
+        // }
 
         // reviewNumber(Number.MAX_SAFE_INTEGER + 12);
 
@@ -791,11 +791,55 @@
         // .toExponential() повертає рядок в експоненційній формі
         // .toString() передворює число на текст
 
-        const a1 = 999999995874212;
-        const a2 = parseInt('1000', 2);
+        // const a1 = 999999995874212;
+        // const a2 = parseInt('1000', 2);
 
-        const a3 = a1.toExponential();
-        const a4 = parseFloat(a3);
+        // const a3 = a1.toExponential();
+        // const a4 = parseFloat(a3);
 
 
-        console.log(a3, a4); 
+        // console.log(a3, a4); 
+
+        // ====================================================================
+
+        // a/b/c.length вказує довжину рядка
+        // const a = 'HelloWorld';
+        // console.log(a.length);
+        // створення рядка через кодове значення unicode, використовуємо конструкцію String
+        // console.log(String.fromCodePoint(128514));
+
+        // символи в рядку рахуються від 0. 0, 1, 2, 3.. Такою конструкцією ми перевіряємо який код має символ. 
+        // const b = 'Æ23456';
+        // console.log(b.codePointAt(0));
+        // console.log(String.fromCodePoint(198));
+
+        // Створювання "сирого" рядка, в якому не будуть оброблюватись спец символи
+        // console.log(String.raw`www/onlytest.com\nfolder/my\uber`);
+
+        // concat - об*єднує рядки в один
+        // console.log(a.concat(' ', b, ' ', '!'));
+
+        // Пошук рядка у символах. 2 означає від якого символа йде пошук
+        // console.log(a.includes('He', 2  ));
+
+        // пошук індексу рядка .indexOf() пошук остатнього рядка lastIndexOf()
+        // console.log(a.indexOf('r', 2));
+        // початок рядка, або кінець (endsWith)
+        // console.log(a.startsWith('He'));
+
+        // Пошук символа за індексом
+        // console.log(a.at(2));
+
+        // Додати на початок рядка/додати на кінець рядка .padStart/.padEnd
+        // const c = '         HelloWorld';
+        // console.log(c.padEnd(15, 'Start')); 
+        // 15 означає скільки символів додасться до строчки + що вставляжмо
+
+        // обрізаємо рядок - slice на символі (2,3,4...аз початку, або з кінця -1,-2, -3...)
+        // console.log(c.slice(4)); 
+
+        // .toLowerCase .toUpperCase - рядок у верхній/нижній регістр
+        // console.log(c.toUpperCase()); 
+
+        // .trim() start/end видаляє прогалини з рядка 
+        // console.log(c.trim()); 
