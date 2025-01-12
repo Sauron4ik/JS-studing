@@ -6,8 +6,8 @@
 
 // const test2 = "test";
 
-// const updateProductName = 
-// userRole === "admin" 
+// const updateProductName =
+// userRole === "admin"
 // ? console.log("isAdmin") || newProductName
 // : console.log("noAdmin") || productName;
 
@@ -42,7 +42,7 @@
 // }
 
 ///////////////////////////////////////////////////////////////////////////////////////
-// Максимально приближений до реального коду 
+// Максимально приближений до реального коду
 
 // const CUSTOM_NAME = "My phone";
 // const MODE = 0;
@@ -71,7 +71,7 @@
 // IF / ELSE / ELSE IF
 // const login = "user";
 // const password = "123qwe123";
-// const isAdmin = true; 
+// const isAdmin = true;
 // const isLoggedIn = true;
 
 // if(isLoggedIn === true) {
@@ -107,8 +107,6 @@
 // let totalPrice = null;
 // let cashbackLevel = 4;
 
-
-
 // if (price < 100) {
 //     console.log("Only for stuff from 100 usd");
 //     cashbackAmount = 0;
@@ -132,7 +130,6 @@
 
 ///////////////////////////////////////////////////////////
 
-
 // const buttonType = "primary";
 
 // if (buttonType === "primary") {
@@ -149,30 +146,29 @@
 //     console.log("default button");
 // }
 
-
 /////////////////////////////////////////////////////////////////
 
-// Йде перевірка по кейсах, коли не знаходиться збіжність в кейсах, 
-//  то буде виконуватися default. Це по аннології if Ta else  
+// Йде перевірка по кейсах, коли не знаходиться збіжність в кейсах,
+//  то буде виконуватися default. Це по аннології if Ta else
 
 // const buttonType = "123",
 //     buttonColor = "red";
 
 // switch (buttonType) {
 //     case "global" :
-//         console.log("global");     
+//         console.log("global");
 //     case "main" :
 //     case "primary" :
 //     console.log("primary");
 //     break;
 
-//     case "secondary" : 
+//     case "secondary" :
 //     console.log("secondary");
 //     break;
 
-//     default: 
-//     console.log("default button"); 
-// }   
+//     default:
+//     console.log("default button");
+// }
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -185,7 +181,6 @@
 
 /////////////////////////////////////////////////////
 
-
 // let count = 0;
 // let isFast = true;
 
@@ -196,8 +191,8 @@
 //     }
 //     else {
 //         count++;
-//     } 
-//     count++; 
+//     }
+//     count++;
 //     // (означає додавання)
 // }
 ///////////////////////////////////////////////////////////////////////
@@ -259,9 +254,7 @@
 //     console.log("Need new car");
 // }
 
-
 /////////////////////////////////////////////////////////////////////////////
-
 
 // let start = 40;
 // let goal = 100;
@@ -276,7 +269,7 @@
 //         }
 
 //     start++;
-//     step++; 
+//     step++;
 
 //     if (step === goal || start === goal) {
 //         console.log("Stop training");
@@ -301,7 +294,6 @@
 
 //////////////////////////////////////////////////////////////////////////////
 
-
 // let q = 0;
 // main: for (let i = 0, j = 5; i <= j; i++) {
 //     console.log("Test", i, j);
@@ -311,8 +303,6 @@
 //     for (; ; ) {
 //         console.log("Q", q);
 
-        
-         
 //         if(q >= i) {
 //             break main;
 //         }
@@ -320,7 +310,6 @@
 //         q++;
 //     }
 // }
-
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -331,14 +320,12 @@
 // let JS = true;
 // let HTML = true;
 
-
-
 // form: {
 //     if (age >= 18 ) {
 
 //         if (hasExp) {
 //             console.log("You pass");
-//             break form;    
+//             break form;
 
 //             if (JS) {
 //                 console.log("You pass");
@@ -351,7 +338,7 @@
 
 //         if (hasEdu) {
 //             console.log("You pass");
-//             break form;  
+//             break form;
 //         }
 //     }
 
@@ -387,105 +374,102 @@
 // }
 
 //////////////////////////////////////////////////////////////////////////////
-                    // FUNCTION
+// FUNCTION
 
 // function calcSpace (amount, a, b, c, d) {
 //     `${amount * 4}px`
 // }
- 
+
 // // Тут передаємо всі змінні з функції по черзі, передаючи всі змінні, навіть значення яких не маємо (тоді через null)
 // calcSpace (5, null, 10)
 
-        // function calcSpace (amount, unit = "px") {
-       
-        // return `${amount * 4}${unit}`;
-        // }
+// function calcSpace (amount, unit = "px") {
 
+// return `${amount * 4}${unit}`;
+// }
 
+// function playTrackById(trackId) {
 
+// }
 
-        // function playTrackById(trackId) {
+// function stopTrackById(trackId) {
+//         console.log(`Get song from ID ${trackId}`)
+// }
 
-        // }
+// function start (trackName, trackId) {
+//         console.log(`Starting: ${trackName}`);
 
-        // function stopTrackById(trackId) {
-        //         console.log(`Get song from ID ${trackId}`)
-        // }
+//         playTrackById(trackId);
+// }
 
-        // function start (trackName, trackId) {
-        //         console.log(`Starting: ${trackName}`);
+// function end (oldtrackName, newTrackName) {
+//         console.log(`Stopping: ${oldtrackName}`);
+//         console.log(`Next Track: ${newTrackName}`);
+// }
 
-        //         playTrackById(trackId);
-        // }
+// function pauseStop (currentTrackName) {
+//         console.log(`Paused: ${currentTrackName}`);
+// }
 
-        // function end (oldtrackName, newTrackName) {
-        //         console.log(`Stopping: ${oldtrackName}`);
-        //         console.log(`Next Track: ${newTrackName}`);
-        // }
+// function pausePlay (currentTrackName) {
+//         console.log(`Paused: ${currentTrackName}`);
 
-        // function pauseStop (currentTrackName) {
-        //         console.log(`Paused: ${currentTrackName}`);
-        // }
+//         reloadDataTrack();
 
-        // function pausePlay (currentTrackName) {
-        //         console.log(`Paused: ${currentTrackName}`);
+//         playTrackById();
+// }
 
-        //         reloadDataTrack();
+// function reloadDataTrack (amount) {
+//         if(amount <= 0) {
+//                 console.log("Data about amount");
+//         } else {
+//                 console.log("Nochmal refreshing");
+//                 reloadDataTrack(amount - 1);
+//         }
+// }
 
-        //         playTrackById();
-        // }
+// reloadDataTrack(5); //сюди передається параметр з функції, в цьому випадку "amount" для обчислення функції//
 
-        // function reloadDataTrack (amount) {
-        //         if(amount <= 0) {
-        //                 console.log("Data about amount");
-        //         } else {
-        //                 console.log("Nochmal refreshing");
-        //                 reloadDataTrack(amount - 1);
-        //         }
-        // }
+// function pauseStopByTrack(trackName, trackId) {
 
-        // reloadDataTrack(5); //сюди передається параметр з функції, в цьому випадку "amount" для обчислення функції//    
+//         let isPause = null;
 
-        // function pauseStopByTrack(trackName, trackId) {
+//         return () => {
+//                 if(isPause == true) {
+//                         return;
+//                 }
 
-        //         let isPause = null;
+//                 stopTrackById(trackId);
+//                 console.log(`Track ${trackName} has paused`);
+//                 isPause = true;
+//         };
+// }
 
-        //         return () => {
-        //                 if(isPause == true) {
-        //                         return;
-        //                 }
+// const pauseStop234 = pauseStopByTrack("Alandria", 10);
 
-        //                 stopTrackById(trackId);
-        //                 console.log(`Track ${trackName} has paused`);
-        //                 isPause = true;
-        //         };
-        // }
+// pauseStop234();
+// pauseStop234();
+// pauseStop234();
 
-        // const pauseStop234 = pauseStopByTrack("Alandria", 10);
+// const runCommand = function(command, errorFn) {
+//         const result = command();
 
-        // pauseStop234();
-        // pauseStop234();
-        // pauseStop234();
+//         if(!result) {
+//                 return errorFn();
+//         }
+// }
 
-        // const runCommand = function(command, errorFn) {
-        //         const result = command();
-                
-        //         if(!result) {
-        //                 return errorFn();
-        //         }
-        // }
+// runCommand(
+//                 // Стрілкова функція
+//         () => {
+//         console.log("Starting command");
 
-        // runCommand(
-        //                 // Стрілкова функція
-        //         () => {
-        //         console.log("Starting command");
+//         return 1-1;
+//         },
+//         () =>
+//         console.log("Error")
 
-        //         return 1-1;
-        //         }, 
-        //         () => 
-        //         console.log("Error")
-        
-        // );
+// );
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -509,7 +493,6 @@
 
 // console.log(calcSpace(4));
 // console.log(calcSpace(4));
-
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -556,16 +539,16 @@
 //         return day;
 //         // Повертаємо назву дня тижня, яку зберегли у змінній day
 //       }
-      
+
 //       // Приклади виклику функції
 //       console.log("Завдання 9 ====================================");
 //       console.log("getDayOfWeek(1)", getDayOfWeek(1)); // Виведе: "Понеділок"
 //       console.log("getDayOfWeek(3)", getDayOfWeek(3)); // Виведе: "Середа"
 //       console.log("getDayOfWeek(6)", getDayOfWeek(6)); // Виведе: "Субота"
 //       console.log("getDayOfWeek(8)", getDayOfWeek(8)); // Виведе: "Невірний номер дня"
-      
+
 //       // Задача 10: Напишіть функцію getVariableType, яка приймає змінну variable і повертає рядок, що відповідає типу цієї змінної. Використовуйте тернарний оператор для визначення типу змінної.
-      
+
 //       function getVariableType(variable) {
 //         // Отримуємо тип змінної variable за допомогою оператора typeof
 //         let type = typeof variable;
@@ -575,22 +558,21 @@
 //         // Якщо тип змінної - string, то повідомлення = "Це рядок"
 //                       type === "string" ? "Це рядок" :
 //         // Якщо тип змінної - boolean, то повідомлення = "Це булеве значення"
-       
+
 //                       type === "boolean" ? "Це булеве значення" :
-                      
+
 //         // В іншому випадку (якщо тип змінної не входить у попередні категорії), то повідомлення = "Це інший тип"
 //                       "Це інший тип";
 //         // Повертаємо встановлене повідомлення як результат функції
 //         return message;
 //       }
-      
+
 //       // Приклади виклику функції
 //       console.log("Завдання 10 ====================================");
 //       console.log("getVariableType(10)", getVariableType(10)); // Виведе: "Це число"
 //       console.log('getVariableType("Hello")', getVariableType("Hello")); // Виведе: "Це рядок"
 //       console.log("getVariableType(true)", getVariableType(true)); // Виведе: "Це булеве значення"
 //       console.log("getVariableType([1, 2, 3])", getVariableType([1, 2, 3])); // Виведе: "Це інший тип"
-
 
 // ВБУДОВАНІ ГЛОБАЛЬНІ ФУНКЦІЇ ///////////////////////////////////////////////////////////////////////////////////
 
@@ -631,9 +613,9 @@
 
 // перетворювання переданного аргумента в ціле число parseInt()
 
-// const num = "10"; 
-// console.log(10 + num); 
-// так в результаті буде 1010, тобто обєднання, а щоб цього не було пишемо 
+// const num = "10";
+// console.log(10 + num);
+// так в результаті буде 1010, тобто обєднання, а щоб цього не було пишемо
 // const num = parseInt("20px");
 // console.log(10 + num);
 // або
@@ -673,7 +655,7 @@
 // =================================================================
 
 // URI / URL encodeURI, decodeURI
-// будуємо строку URL та пошук/ encodeURI()конвертує текст в рядки URI 
+// будуємо строку URL та пошук/ encodeURI()конвертує текст в рядки URI
 // const domain = "google.com";
 
 // function redirectToPath(path) {
@@ -695,7 +677,6 @@
 
 // const path = "/product/Ноут Dell/info";
 
-
 // const link = `https://${domain}/${path}`;
 
 // const link1 = redirectToPath(path);
@@ -705,8 +686,8 @@
 
 // ==============================================================
 
-// конструктори числових даних 
-// const a = 0.00051; 
+// конструктори числових даних
+// const a = 0.00051;
 // const b = 0.00052;
 // const c = 0.00103;
 
@@ -722,11 +703,11 @@
 // console.log(Number.MIN_SAFE_INTEGER);
 
 // Максимальне (мінімально)можливе число
-// Number.MAX_VALUE; Number.MIN_VALUE 
+// Number.MAX_VALUE; Number.MIN_VALUE
 // console.log(Number.MAX_VALUE);
 // console.log(Number.MIN_VALUE);
 
-// ПЕРЕВІРКА НА ЦІЛЕ ЧИСЛО 
+// ПЕРЕВІРКА НА ЦІЛЕ ЧИСЛО
 // function reviewNumber(num) {
 
 //         if (Number.isNaN(num)) {
@@ -739,107 +720,222 @@
 
 //         if(!Number.isInteger(num)) {
 //                 return console.log('Дроб', num);
-//         }      
-//         return console.log(num);  
+//         }
+//         return console.log(num);
 // }
 
 // // reviewNumber(10);
 
-//      ПЕРЕВІРКА НА ЦІЛЕ ЧИСЛО З УРАХУВАННЯМ МАКС І МІН БЕЗПЕЧНОГО ЧИСЛА 
-        // function reviewNumber(num) {
+//      ПЕРЕВІРКА НА ЦІЛЕ ЧИСЛО З УРАХУВАННЯМ МАКС І МІН БЕЗПЕЧНОГО ЧИСЛА
+// function reviewNumber(num) {
 
-        //         if (Number.isNaN(num)) {
-        //                 return console.log('Is not a number', num);
-        //         }
+//         if (Number.isNaN(num)) {
+//                 return console.log('Is not a number', num);
+//         }
 
-        //         if (!num && num !== 0) {
-        //                 return console.log('Bad number', num);
-        //         }
+//         if (!num && num !== 0) {
+//                 return console.log('Bad number', num);
+//         }
 
-        //         if(!Number.isInteger(num)) {
-        //                 return console.log('Дроб', num);
-        //         }      
+//         if(!Number.isInteger(num)) {
+//                 return console.log('Дроб', num);
+//         }
 
-        //         if(!Number.isSafeInteger(num)) {
-        //                 return console.log('Денджер', num);
-        //         }      
+//         if(!Number.isSafeInteger(num)) {
+//                 return console.log('Денджер', num);
+//         }
 
-        //         return console.log(num);  
-        // }
+//         return console.log(num);
+// }
 
-        // reviewNumber(Number.MAX_SAFE_INTEGER + 12);
+// reviewNumber(Number.MAX_SAFE_INTEGER + 12);
 
-        // .toFixed(1/2/3) Обрізає числа до десяткових значень. (1/2/3 знаки після крапки)
-        // const a1 = 1.12341;
-        // const a2 = parseInt('1000', 2);
+// .toFixed(1/2/3) Обрізає числа до десяткових значень. (1/2/3 знаки після крапки)
+// const a1 = 1.12341;
+// const a2 = parseInt('1000', 2);
 
-        // const a3= parseFloat(a1.toFixed(2));
+// const a3= parseFloat(a1.toFixed(2));
 
+// console.log(a3);
 
-        // console.log(a3); 
+// .toPrecision() округлювання цілого числа
 
-        // .toPrecision() округлювання цілого числа 
+// const a1 = 11236.12341;
+// const a2 = parseInt('1000', 2);
 
-        // const a1 = 11236.12341;
-        // const a2 = parseInt('1000', 2);
+// const a3= parseFloat(a1.toPrecision(4));
 
-        // const a3= parseFloat(a1.toPrecision(4));
+// console.log(a3);
 
+// .toExponential() повертає рядок в експоненційній формі
+// .toString() передворює число на текст
 
-        // console.log(a3); 
+// const a1 = 999999995874212;
+// const a2 = parseInt('1000', 2);
 
-        // .toExponential() повертає рядок в експоненційній формі
-        // .toString() передворює число на текст
+// const a3 = a1.toExponential();
+// const a4 = parseFloat(a3);
 
-        // const a1 = 999999995874212;
-        // const a2 = parseInt('1000', 2);
+// console.log(a3, a4);
 
-        // const a3 = a1.toExponential();
-        // const a4 = parseFloat(a3);
+// ====================================================================
 
+// a/b/c.length вказує довжину рядка
+// const a = 'HelloWorld';
+// console.log(a.length);
+// створення рядка через кодове значення unicode, використовуємо конструкцію String
+// console.log(String.fromCodePoint(128514));
 
-        // console.log(a3, a4); 
+// символи в рядку рахуються від 0. 0, 1, 2, 3.. Такою конструкцією ми перевіряємо який код має символ.
+// const b = 'Æ23456';
+// console.log(b.codePointAt(0));
+// console.log(String.fromCodePoint(198));
 
-        // ====================================================================
+// Створювання "сирого" рядка, в якому не будуть оброблюватись спец символи
+// console.log(String.raw`www/onlytest.com\nfolder/my\uber`);
 
-        // a/b/c.length вказує довжину рядка
-        // const a = 'HelloWorld';
-        // console.log(a.length);
-        // створення рядка через кодове значення unicode, використовуємо конструкцію String
-        // console.log(String.fromCodePoint(128514));
+// concat - об*єднує рядки в один
+// console.log(a.concat(' ', b, ' ', '!'));
 
-        // символи в рядку рахуються від 0. 0, 1, 2, 3.. Такою конструкцією ми перевіряємо який код має символ. 
-        // const b = 'Æ23456';
-        // console.log(b.codePointAt(0));
-        // console.log(String.fromCodePoint(198));
+// Пошук рядка у символах. 2 означає від якого символа йде пошук
+// console.log(a.includes('He', 2  ));
 
-        // Створювання "сирого" рядка, в якому не будуть оброблюватись спец символи
-        // console.log(String.raw`www/onlytest.com\nfolder/my\uber`);
+// пошук індексу рядка .indexOf() пошук остатнього рядка lastIndexOf()
+// console.log(a.indexOf('r', 2));
+// початок рядка, або кінець (endsWith)
+// console.log(a.startsWith('He'));
 
-        // concat - об*єднує рядки в один
-        // console.log(a.concat(' ', b, ' ', '!'));
+// Пошук символа за індексом
+// console.log(a.at(2));
 
-        // Пошук рядка у символах. 2 означає від якого символа йде пошук
-        // console.log(a.includes('He', 2  ));
+// Додати на початок рядка/додати на кінець рядка .padStart/.padEnd
+// const c = '         HelloWorld';
+// console.log(c.padEnd(15, 'Start'));
+// 15 означає скільки символів додасться до строчки + що вставляжмо
 
-        // пошук індексу рядка .indexOf() пошук остатнього рядка lastIndexOf()
-        // console.log(a.indexOf('r', 2));
-        // початок рядка, або кінець (endsWith)
-        // console.log(a.startsWith('He'));
+// обрізаємо рядок - slice на символі (2,3,4...аз початку, або з кінця -1,-2, -3...)
+// console.log(c.slice(4));
 
-        // Пошук символа за індексом
-        // console.log(a.at(2));
+// .toLowerCase .toUpperCase - рядок у верхній/нижній регістр
+// console.log(c.toUpperCase());
 
-        // Додати на початок рядка/додати на кінець рядка .padStart/.padEnd
-        // const c = '         HelloWorld';
-        // console.log(c.padEnd(15, 'Start')); 
-        // 15 означає скільки символів додасться до строчки + що вставляжмо
+// .trim() start/end видаляє прогалини з рядка
+// console.log(c.trim());
 
-        // обрізаємо рядок - slice на символі (2,3,4...аз початку, або з кінця -1,-2, -3...)
-        // console.log(c.slice(4)); 
+// =================================================================
 
-        // .toLowerCase .toUpperCase - рядок у верхній/нижній регістр
-        // console.log(c.toUpperCase()); 
+// МАСИВ "[ ]"
 
-        // .trim() start/end видаляє прогалини з рядка 
-        // console.log(c.trim()); 
+// const a = 1;
+// const b = 2;
+// const c = 3;
+
+// const getOne = () => 1;
+
+// // В масив можемо покласті будь який тип даних, функцію, тощо
+// let list = [function Name() {}, 100, "Text", null, 1 + 2, 5 > 3, getOne()];
+
+// console.log(list);
+
+// let bigMass = [[[1], [2, 21, 22, 23], [3]], [[4], [5]], [[6]]];
+
+//         // щоб дістатися до елементу, треба вказати шлях, вказуючи індекси 0 - перший масив,
+//         //  1 - другий масив в першому, 2 - число 22 третій елемент, тому 2. Такі масиви рідкість
+// console.log(bigMass[0] [1] [2]);
+
+// Ітерація масиву for (... of ...) для ітерації значень комірок масиву
+// let bigMass = [
+//   [[1], [2, 3, 4, 5], [3]],
+//   [[4], [5]],
+// ];
+
+// const location = [
+//   [100, 200],
+//   [105, 205],
+//   [110, 190],
+// ];
+
+// for (const point of location) {
+//   for (const coord of point) {
+//     console.log(coord);
+//   }
+// }
+//          for(... in ...) для ітерації по індексах кожної комірки
+
+// let bigMass = [
+//   [[1], [2, 3, 4, 5], [3]],
+//   [[4], [5]],
+// ];
+
+// const location = [
+//   [100, 200],
+//   [105, 205],
+//   [110, 190],
+// ];
+
+// for (const pointIndex in location) {
+//   console.log(location[pointIndex]);
+//   for (const coordIndex in location[pointIndex]) {
+//     console.log(location[pointIndex][coordIndex]);
+//   }
+// }
+
+// for(let i = 0; i < location.length; i++) {
+//   console.log(location[i]);
+//   for (let j = 0; j < location[i].length; j++)
+//     console.log(location[i][j]);
+// }
+
+//  ПОРІВНЯННЯ МАСИВІВ
+// при порівнянні масивів завжди буде fals але ми можемо перевести масив в рядок (.toString)
+// const l1 = [23, 22, 21];
+// const l2 = [23, 21, 22];
+// // посилання на масив ***
+// const l3 = l1;
+// console.log(l1.toString() === l2.toString());
+
+// console.log(l1, l3);
+
+// Деструктуризація - розбиття масиву на окремі змінні, щоб легко отримати доступ до елементів
+
+//  const location = [
+//     [100, 200],
+//     [105, 205],
+//     [110, 190],
+//   ];
+// так ми вказуємо, що хочемо витягнути 2 елементи з комірки масиву
+// const [loc1, loc2] = location;
+
+// а так ми витягуємо один елемент в окремий масив, а решту(...rest) в інший
+// const [loc1, ...rest] = location;
+// const [[p1, p2], loc3, loc4 = 'Test'] = rest;
+
+// console.log(p1, p2);
+
+// const l1 = [23, 22, 21];
+// const l2 = [23, 21, 22];
+
+// const [...l3] = l1;
+
+// console.log(l1.toString() === l2.toString());
+
+// console.log(l1, l3);
+// delete l1[0];
+// console.log(l1, l3);
+
+// function printFullName ([name, firstname, lastname, ...arg]) {
+//   // console.log(arg);
+//   // return arg.toString();
+//    return `${name} ${firstname} ${lastname} ${arg.length ? `(${arg.toString()})`: ''}`;
+// }
+// console.log(printFullName(['Pusan', 'Pusanovich', 'Pusanski']));
+
+// function sumAllNum(...nums) {
+//   let sum = 0;
+//   for (const n of nums) {
+//     sum += n;
+//   }
+//   return [sum, nums.length];
+// }
+// const [sum, numlength] = sumAllNum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+// console.log(sum, numlength);
